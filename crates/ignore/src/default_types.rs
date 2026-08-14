@@ -215,7 +215,10 @@ pub(crate) const DEFAULT_TYPES: &[(&[&str], &[&str])] = &[
     (&["postscript"], &["*.eps", "*.ps"]),
     (&["prolog"], &["*.pl", "*.pro", "*.prolog", "*.P"]),
     (&["proto", "protobuf"], &["*.proto"]),
-    (&["ps"], &["*.cdxml", "*.ps1", "*.ps1xml", "*.psd1", "*.psm1"]),
+    (&["powershell", "ps", "pwsh"], &[
+        "*.cdxml", "*.ps1", "*.ps1xml", "*.psc1", "*.psd1", "*.psm1", "*.psr",
+         "*.psrc", "*.pssc", "*.psxml"
+    ]),
     (&["puppet"], &["*.epp", "*.erb", "*.pp", "*.rb"]),
     (&["purs"], &["*.purs"]),
     (&["py", "python"], &["*.py", "*.pyi"]),
